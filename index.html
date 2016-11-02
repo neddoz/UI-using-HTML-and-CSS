@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WebTicketBroker.com</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn-dark btn-lg toggle">
+      <!-- <img src="img/menu.svg" /> -->
+      <i class="fa fa-bars fa-1x"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a></br>
+            <li>
+                <a href="#top" class="btn-circle"onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                 <a href="#categories" class="btn-circle"onclick=$("#menu-close").click();>Concerts</a>
+            </li>
+            <li>
+                <a href="#footer" class="btn-circle"onclick=$("#menu-close").click();>Venues</a>
+            </li>
+            <li>
+                <a href="#featured-teams" class="btn-circle"onclick=$("#menu-close").click();>Broadway</a>
+            </li>
+            <li>
+                <a href="#featured-teams" class="btn-circle"onclick=$("#menu-close").click();>Baseball</a>
+            </li>
+            <li>
+                <a href="#featured-teams" class="btn-circle"onclick=$("#menu-close").click();>BasketBall</a>
+            </li>
+            <li>
+                <a href="#featured-teams" class="btn-circle"onclick=$("#menu-close").click();>Football</a>
+            </li>
+            <li>
+                <a href="#featured-teams" class="btn-circle"onclick=$("#menu-close").click();>Hockey</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+
+    <header id="top" class="header">
+      <div class="text-vertical-center">
+          <h1 class="visible-lg">WebTicketBroker.com</h1>
+          <h5 class="visible-xs">WebTicketBroker.com</h5>
+          <h6 style="color: #fcf8e3;" class="visible">Your agent to purchase tickets for any concert or sporting event according to the budget</h6>
+         <div class="btn-circle-scroll fadeIn"> <label for="search"><i class="fa fa-search fa-lg" aria-hidden="true"></i><input type="text" class="text-center"name="search" id="search"style="width: 300px;" placeholder="Search for your tickets"></label></div></br></br>
+          <a href="#popular" class="btn btn-dark btn-lg btn-circle"><i class="fa fa-angle-double-down"></i></a>
+      </div>
+    </header>
+
+    <!-- Popular tickets -->
+    <section id="popular">
+      <div class="sticky-header visible-lg"><h1>POPULAR TICKETS</h1></div>
+    </section>
+
+    <!-- categories -->
+    <section id="cards">
+      <div class="container" style="">
+        <div class="row" style="padding-top:15%">
+            <div class="col-lg-4 col-xs-12 col-md-4">
+              <div class="card medium">
+                  <div class="card-image">
+                    <img src="images/1.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action text-center">
+                    <a href="#" class="waves-effect waves-light btn">Buy Ticket</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 col-md-4">
+              <div class="card medium">
+                  <div class="card-image">
+                    <img src="images/2.jpg">
+                    <span class="card-title">Kate Perry</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action text-center">
+                    <a href="#" class="btn btn-info">Buy Ticket</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 col-md-4">
+              <div class="card medium">
+                  <div class="card-image">
+                    <img src="images/3.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action text-center">
+                    <a href="#" class="btn btn-info">Buy Ticket</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" style="background-color: #111;">
+      <div class="container-fluid no-padding">
+        <div class="sticky-header visible-lg"><h1>CATEGORIES</h1></div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/soccer.jpg" style="max-height:350px">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">SOCCER</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/baseball.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">BASEBALL</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/basketball1.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">BASKETBALL</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/venue.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">Venues</span>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/concert.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">Concerts</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/times-square.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">BroadWay</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/hockey.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">Hockey</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding">
+          <img class="img img-responsive" src="images/2.jpg">
+          <div class="absolute-box">
+            <div class="box-content">
+                <div class="box-heading">
+                  <span class="box-text">Home</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="featured"></section>
+
+    <section id="signup">
+        <div class="container-fluid">
+          <div class="row" style="padding: 7% 0% 7% 0%;">
+            <div class="col-md-12">
+              <center>
+                  <h2 class="signup-header">Whats going on in your city? Get on the list?</h2>
+                <div class="display:block margin:auto ">
+                  <form action="#">
+                      <div class="form-group form-inline">
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-lg-offset-2">
+                          <input type="email" style="width:100%" class="custom-form-control text-center input-lg" id="email" placeholder="Your Email address">
+                        </div>
+                        <div class="col-lg-2 col-lg-offset-1 col-xs-12 col-md-6">
+                            <button type="submit" class="btn btn-default btn-ghost">Sign Up</button>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </center>
+            </div>
+
+          </div>
+      </div>
+</div>
+    </section>
+
+    <section id="featured-teams">
+        <div class="sticky-header visible-lg"><h1>FEATURED TEAMS</h1></div>
+        <div class="container" style="">
+          <div class="row" style="padding-top:15%">
+              <div class="col-lg-4 col-xs-12 col-md-4">
+                <div class="card medium">
+                    <div class="card-image">
+                      <img src="images/1.jpg">
+                      <span class="card-title">Team Name</span>
+                    </div>
+                    <div class="card-action text-center">
+                      <a href="#" class="waves-effect waves-light btn"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-xs-12 col-md-4">
+                <div class="card medium">
+                    <div class="card-image">
+                      <img src="images/2.jpg">
+                      <span class="card-title">Team Name</span>
+                    </div>
+                    <div class="card-action text-center">
+                      <a href="#" class="btn btn-info"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-xs-12 col-md-4">
+                <div class="card medium">
+                    <div class="card-image">
+                      <img src="images/3.jpg">
+                      <span class="card-title">Team Name</span>
+                    </div>
+                    <div class="card-action text-center">
+                      <a href="#" class="btn btn-info"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+    <hr/>
+    <footer id="footer">
+            <div class="row" style="padding-top:-20%;">
+                <div class="col-lg-6 col-xs-12 col-md-6 text-center">
+                        <ul>
+                          <li><a href="#">Red Hot Chili Peppers</a></li>
+                          <li><a href="#">Trans-Siberian Orchestra</a></li>
+                          <li><a href="#">Adele</a></li>
+                          <li><a href="#">Adele North American Tour</a></li>
+                          <li><a href="#">Garth Brooks</a></li>
+                          <li><a href="#">Trisha Yearwood</a></li>
+                          <li><a href="#">New York Knicks</a></li>
+                          <li><a href="#">Dallas Cowboys</a></li>
+                          <li><a href="#">The Pretenders</a></li>
+                          <li><a href="#">Stevie Nicks</a></li>
+                      </ul>
+                </div>
+                <div class="col-lg-6 col-xs-12 col-md-6 text-center">
+                    <ul>
+                      <li><a href="#">Basket Ball</a></li>
+                      <li><a href="#">Hockey</a></li>
+                      <li><a href="#">Baseball</a></li>
+                      <li><a href="#">Football</a></li>
+                  </ul>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-9 col-xs-12 col-md-9"></div>
+                    <div class="col-lg-3 col-xs-12 col-md-3 pull-right">
+                        <a href="#"><i class="fa fa-facebook-official fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-flickr fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <p class="w3-medium">
+                            Powered by <a href="#" target="_blank">www.webticketbroker.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#top" class="btn-circle">
+								<i class="fa fa-angle-up fa-3x"></i>
+							</a>
+                        </p>
+                    </div>
+            </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    	<script src="js/jquery.scrollTo.js"></script>
+    	<script src="js/wow.min.js"></script>			<!-- Reveal animation when you scroll by wow.js. It need animate.css library -->
+    	<!-- Custom Theme JavaScript -->
+    	<script src="js/custom.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+
+    </script>
+
+</body>
+
+</html>
